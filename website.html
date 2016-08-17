@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<title>Cry Out</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel ="stylesheet" href ="website.css">
+
+<style>
+.mySlides {display: none;}
+</style>
+<body>
+
+<h2 class="w3-center">Automatic Slideshow</h2>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="future.jpg" style="width:100%">
+  <img class="mySlides" src="women.jpg" style="width:100%">
+  <img class="mySlides" src="Quotes.jpg" style="width:100%">
+</div>
+
+
+<!-- Navbar -->
+<div class="w3-top">
+<ul class="w3-navbar w3-black w3-card-2 w3-left-align">
+  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+    <a class="w3-padding-large" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+  </li>
+  <li><a href="bar" class="w3-hover-none w3-hover-text-grey w3-padding-large">Home</a></li>
+  <li class="w3-hide-small"><a href="bar" class="w3-padding-large">About Us</a></li>
+  <li class="w3-hide-small"><a href="bar" class="w3-padding-large">Rescources</a></li>
+  <li class="w3-hide-small"><a href="bar" class=" w3-padding-large">Contact </a></li>
+  <li class="w3-hide-small w3-dropdown-hover">
+    <a href="javascript:void(0)" class="w3-hover-none w3-padding-large" title="More">MORE <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+      <a href="#">Books</a>
+      <a href="#">Quotes</a>
+      <a href= "file:///C:/Users/Prudential15/Downloads/finalproject%20(1).html">
+		  Media </a>
+    </div>
+  </li>
+  <li class="w3-hide-small w3-right"><a href="javascript:void(0)" class="w3-padding-large w3-hover-red"><i class="fa fa-search"></i></a></li>
+</ul>
+</div>
+<div class="w3-content" style="max-width:1800px;margin-top:46px">
+
+
+
+<!-- Nav on small screens -->
+<div id="nav" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <ul class="w3-navbar w3-left-align w3-black">
+    <li><a class="w3-padding-large" href="nav">Mission</a></li>
+    <li><a class="w3-padding-large" href="nav">Stats</a></li>
+    <li><a class="w3-padding-large" href="nav">Contact</a></li>
+    <li><a class="w3-padding-large" href="nav">Home</a></li>
+  </ul>
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+  <!-- Who We Are -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
+    <h2 class="w3-wide" id= "title"> Cry Out</h2>
+    <p class="w3-opacity"><i>We Want To Help</i></p>
+    <p class="w3-justify"> Welcome to our Page! We Created this page to provide recources for women who has been abused sexually or physically in a relationship. We really wanted to show Women that there is hope on the other side and that they can overcome their sitaution no mater what the world throws at them. We would try our best to reach out to underground shelters for abused women and hotlines so they can get help as soon as possible.</p>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+    <h2 class="w3-wide w3-center">CONTACT US</h2>
+    <p class="w3-opacity w3-center"><i> Need Help!Email Us!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> 755 South Orange Avenue
+Newark, NJ - 07106 <br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone:(973) 484-1704<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email:awoods1099@gmail.com <br>
+      </div>
+      <div class="w3-col m6">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Comment">
+        <button class="w3-btn w3-section w3-right">SEND</button>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("nav");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+</script>
+<audio controls autoplay>
+<audio src="rise.mp3" type="audio/mpeg">
+
+</body>
+</html>
+

@@ -1,9 +1,71 @@
 
 #title{ 
-color:LightSalmon;
+color:white;
 font-family:Brush Script MT,cursive;
+text-align: center;
+font-size:60px;
 }
 
 
 
+#body{
+	background-image: url("strong.jpg");
+}
+
+#help{ 
+	font-size:25px;
+	}
+	
+#text{
+	font-family: "Lobster", cursive;
+	color:white;
+	font-size: 20px;
+}
+body{
+	background: #556270; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #556270 , #FF6B6B); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #556270 , #FF6B6B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+} 
+
+#header{
+	text-align: center;
+}
+
+#nav {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    height:45px;
+	font-family: "Lato", sans-serif;
+	position: relative;
+	font-size:20px;
+   }
+
+#nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    width: 100%;
+    display: inline-block;
+    list-style-type: none;
+	
+}
+
+#nav li {
+    margin: 10px;
+    display:inline-block;
+	text-align: center;
+	
+}
+
+#nav li a {
+    padding: 10px;
+    text-decoration: none;
+    color:white;
+}
+
+#nav li a:hover {
+    color: #FFFFFF;
+    background-color: LightSkyBlue;
 }

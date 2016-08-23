@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<title> About Us </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel ="stylesheet" href="aboutus.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Lato", sans-serif}
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-tag {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+</style>
+<body>
+
+	<div id="nav">
+			<ul>
+			  <li><a href="aboutus.html">About Us</a></li>
+			  <li><a href="Final Resources.html">Resources</a></li>
+			  <li><a href="finalproject (2).html">Media</a></li>
+			  <li><a href="website.html">Home</a></li>
+			  <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScJMK-0irn_RyqRS34mZQGBUGYdwG0s0VnpsoDcA9LxEwXNFA/viewform">Contact Us</a></li>
+			</ul>
+	</div>
+<!-- Content -->
+<div class="w3-content w3-container" style="max-width:1100px;margin-bottom:80px">
+  <div class="w3-section">
+    <h1 id ="header"><b> About Us </b></h1>
+  </div>
+
+  <!-- Slideshow -->
+  <div class="w3-display-container mySlides">
+    <img src="all.jpg" style="width:100%">
+    <div class="w3-display-topleft w3-text-white w3-container w3-padding-32 w3-hide-small">
+    </div>
+
+<div class="w3-content" style="max-width:1800px;margin-top:46px">
+
+
+  <!-- Grid -->
+  <div class="w3-row-padding" style="margin:0 -16px">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Who We Are</span>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="ari.jpg" alt="Norway" style="width:100%">
+        <div class="w3-container">
+          <h3 id="color">Arianna Woods </h3>
+          <p class="w3-opacity"> Co-Founder</p>
+          <p id="color"> Hi Welcome, My Name is Arianna I am 17 and a Senior in HighSchool. I wanted to create this website to not only provide resources for abused women but to bring awareness to the world that their are women in this world who are scared out of their minds and they don't know how to escape.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="jay.jpg" alt="Norway" style="width:100%">
+        <div class="w3-container">
+          <h3 id="color"> Jayleen DeLaCruz</h3>
+          <p class="w3-opacity"> Co - Founder</p>
+          <p id="color"> Hello I am Jayleen , I am  junior in highschool and the reason I am doing this website is to inspire other women to speak out  and have a voice for themselves.To let them know that they are not alone and that their are resources available for them because they are not alone. </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="al.jpg" alt="Norway" style="width:100%">
+        <div class="w3-container">
+          <h3 id="color"> Alanza Blake </h3>
+          <p class="w3-opacity">Co-Founder </p>
+          <p id="color"> I'm Alanza Blake and I'm 16 years old. I'm going into my junior year of high school. I cofounded this website because many women have been scared in this world of their abusers and I want to help reassure them that they're worth a lot. </p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<script>
+// Slideshow script
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>
+

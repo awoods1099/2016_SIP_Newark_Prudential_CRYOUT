@@ -1,0 +1,16 @@
+#background{
+	background-image url("womenunited.jpg");
+}
+#picture{
+}
+
+.logo-icon{
+	width: 28px;  // 14px * 2
+	height: 28px; // 14px * 2
+	background-size: 938px 318px;  // original dimensions * 2
+	background-position: -624px -48px;  // original position * 2
+}
+
+#resource{
+	text-align:center;
+}
